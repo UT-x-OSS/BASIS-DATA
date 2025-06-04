@@ -92,6 +92,7 @@ Login to MySQL:
 mysql -u root -p
 ```
 
+
 Inside MySQL prompt:
 
 ```sql
@@ -120,6 +121,10 @@ RESET SLAVE;
 
 ```bash
 mysql -u root -p
+```
+
+```bash
+CREATE DATABASE db_transaksi;
 ```
 
 Inside MySQL prompt:

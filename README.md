@@ -2,7 +2,7 @@
 
 # 🔥💀 MySQL Replication & Transaction Warfare — No GUI, Just CLI Grit
 "Built for real devs who don't click — only type."
-"Simulasi replikasi dan transaksi MySQL langsung dari terminal — karena GUI cuma buat yang belum minum kopi."
+"Simulasi replikasi & transaksi MySQL langsung dari CLI — karena yang pake GUI biasanya belum sarapan kerasnya hidup."
 
 > **Real ones don't use GUIs.**  
 This is your full-throttle guide to setting up MySQL replication *exclusively* from the terminal — no phpMyAdmin, no mouse clicks, just raw shell power.  
@@ -65,8 +65,9 @@ Inside MySQL prompt:
 CREATE USER 'replica'@'%' IDENTIFIED BY 'password';
 GRANT REPLICATION SLAVE ON *.* TO 'replica'@'%';
 FLUSH PRIVILEGES;
-SHOW MASTER STATUS;
+
 ```
+
 
 > 📝 Save the `File` and `Position` — they’re your golden keys for setting up the slave.
 
@@ -106,7 +107,20 @@ CHANGE MASTER TO
   MASTER_LOG_POS=123;
 
 START SLAVE;
-SHOW SLAVE STATUS\G;
+```
+
+LOOK FOR THIS IMPORTANT SECTION
+
+```sql
+SHOW SLAVE STATUS\G
++---------------------------------------------+
+|          MYSQL REPLICATION STATUS           |
++---------------------------------------------+
+| MASTER_HOST     | 127.0.0.1                 |
+| SLAVE_IO_RUNNING| Yes                       |
+| SLAVE_SQL_RUNNING| Yes                      |
+| Last_Error      | NULL                      |
++---------------------------------------------+
 ```
 
 > 💡 Having issues? Use:

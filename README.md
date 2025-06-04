@@ -28,6 +28,7 @@ Dalam konteks **MySQL Replication**, *Master* dan *Slave* adalah peran yang dibe
 
 ## 🖥️ MASTER SETUP
 
+![SCREENSHOT](SCREENSHOT.png)
 
 
 Enable and start MySQL on the master:

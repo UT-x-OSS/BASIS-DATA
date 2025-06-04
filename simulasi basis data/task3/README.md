@@ -143,13 +143,12 @@ SHOW MASTER STATUS;
 ```
 
 ```sql
-
-```
 +------------------+----------+--------------+------------------+-------------------+
 | File             | Position | Binlog_Do_DB | Binlog_Ignore_DB | Executed_Gtid_Set |
 +------------------+----------+--------------+------------------+-------------------+
 | mysql-bin.000001 |     123  |              |                  |                   |
 +------------------+----------+--------------+------------------+-------------------+
+```
 
 ```sql
 CHANGE MASTER TO MASTER_HOST='192.168.??.??', MASTER_USER='replica', MASTER_PASSWORD='password', MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=123;

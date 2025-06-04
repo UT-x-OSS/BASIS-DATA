@@ -64,7 +64,7 @@ Sudah disediakan data pasien, dokter, perawat, dan obat sebagai contoh untuk per
 ---
 
 ## Penutup
-> Shakira, Kiran, Putri, dan teman-teman mahasiswa Universitas Terbuka lainnya, saya ucapkan terima kasih banyak atas bantuan, dukungan, dan kerja sama kalian selama pengerjaan repository ini. Tanpa kalian, database ini nggak akan selesai dengan baik. Semoga hasil kerja kita bersama ini bisa bermanfaat buat belajar dan pengembangan selanjutnya. 
+> teman-teman mahasiswa Universitas Terbuka lainnya, saya ucapkan terima kasih banyak atas bantuan, dukungan, dan kerja sama kalian selama pengerjaan repository ini. Tanpa kalian, database ini nggak akan selesai dengan baik. Semoga hasil kerja kita bersama ini bisa bermanfaat buat belajar dan pengembangan selanjutnya. 
 ---
 
 Terus semangat belajar dan coding!  

@@ -113,13 +113,16 @@ LOOK FOR THIS IMPORTANT SECTION
 
 ```sql
 SHOW SLAVE STATUS\G
+```
+
+```sql
 +---------------------------------------------+
 |          MYSQL REPLICATION STATUS           |
 +---------------------------------------------+
-| MASTER_HOST     | 127.0.0.1                 |
-| SLAVE_IO_RUNNING| Yes                       |
-| SLAVE_SQL_RUNNING| Yes                      |
-| Last_Error      | NULL                      |
+| MASTER_HOST       | .........               |
+| SLAVE_IO_RUNNING  | Yes                     |
+| SLAVE_SQL_RUNNING | Yes                     |
+| Last_Error        | NULL                    |
 +---------------------------------------------+
 ```
 

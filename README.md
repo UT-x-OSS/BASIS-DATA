@@ -281,11 +281,11 @@ Repositori ini dibuat **dengan pendekatan CLI sepenuhnya** karena alasan berikut
 
 
 
-✅ Master ↔ Slave replication is live.  
-✅ Triggers and transactions are firing on all cylinders.  
-✅ No GUI. No distractions. Just pure command-line domination.
+---
 
-> 💣 Built entirely on the CLI — lightweight, surgical, and untouchable.  
-> 👩‍💻 Crafted by **Kiran** & **Shakira**, students of **Universitas Terbuka**.  
-> 🧠 Stay sharp. Code hard. Think like a dev, move like a .... think your self ! 🔥
+🛠️ Crafted by **Kiran** & **Shakira**, students of **Universitas Terbuka**.  
+> 💡 Built with focus, driven by curiosity.  
+> ⚡ Lightweight, reliable, and made to help you work smarter.  
+> © 2025. All rights reserved.
+
 

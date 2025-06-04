@@ -33,6 +33,51 @@ Dalam konteks **MySQL Replication**, *Master* dan *Slave* adalah peran yang dibe
 
 Enable and start MySQL on the master:
 
+archlinux
+
+```bash
+# MySQL
+sudo pacman -S mysql
+
+# MariaDB
+sudo pacman -S mariadb
+
+```
+debian or ubuntu
+
+```bash
+# MySQL
+sudo apt update
+sudo apt install mysql-server
+
+# MariaDB
+sudo apt install mariadb-server
+
+```
+setup bebrerapa OS
+
+```bash
+sudo nano /etc/my.cnf.d/mariadb-server.cnf   # Arch
+
+# atau
+
+sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf  # Ubuntu/Debian
+
+```
+setup mariadb atau mysql
+
+```bash
+sudo mkdir /var/lib/mysql-maria
+sudo chown mysql:mysql /var/lib/mysql-maria
+sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql-maria
+
+# atau mysql
+
+sudo mkdir /var/lib/mysql
+sudo chown mysql:mysql /var/lib/mysql
+sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+```
+
 ```bash
 sudo systemctl enable mysql
 sudo systemctl start mysql

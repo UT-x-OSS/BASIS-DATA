@@ -28,10 +28,8 @@ Dalam konteks **MySQL Replication**, *Master* dan *Slave* adalah peran yang dibe
 
 ---
 
-## 🖥️ MASTER SETUP
 
-
-Enable and start MySQL on the master:
+# install and setup mariadb or mysql
 
 archlinux
 
@@ -83,7 +81,7 @@ sudo systemctl enable mysql
 sudo systemctl start mysql
 ```
 
-### 🔧 Configure MySQL on Master
+### 🔧 MASTER SETUP 🖥️
 
 ```bash
 echo "[mysqld]

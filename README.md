@@ -1,10 +1,12 @@
 
 
-# 📦 MySQL Replication & Transaction Simulation (CLI Only)
+#🔥💀 MySQL Replication & Transaction Warfare — No GUI, Just CLI Grit
+"Built for real devs who don't click — only type."
+"Simulasi replikasi dan transaksi MySQL langsung dari terminal — karena GUI cuma buat yang belum minum kopi."
 
 > **Real ones don't use GUIs.**  
-This is your full-throttle guide to setting up MySQL replication *exclusively* from the terminal — no phpMyAdmin, no mouse clicks, just raw shell power.  
-Perfect for devs, sysadmins, and digital warriors who live in the terminal.
+>This is your full-throttle guide to setting up MySQL replication *exclusively* from the terminal — no phpMyAdmin, no mouse clicks, just raw shell power.  
+>Perfect for devs, sysadmins, and digital warriors who live in the terminal.
 
 > ⚠️ Note: Tested and tuned on **Linux-to-Linux** setups. Cross-OS setups (like Linux to Windows) might behave differently — tread carefully.
 

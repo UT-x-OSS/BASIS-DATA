@@ -132,12 +132,24 @@ SHOW MASTER STATUS;
 ## 🖥️ SLAVE SETUP
 
 ### 🔧 Configure MySQL on Slave
+```bash
+sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+
+# atau 
+
+sudo nano /etc/mysql/my.cnf
+```
 
 ```bash
-echo "[mysqld]
+[mysqld]
 server-id=2
+log_bin=mysql-bin
 relay-log=mysql-relay-bin
-read_only=0" | sudo tee -a /etc/mysql/my.cnf
+relay-log-index=mysql-relay-bin.index
+read_only=0  # Ubah ke 1 jika ingin replica bersifat read-only
+skip-slave-start=1
+log_slave_updates=1
+
 ```
 
 Restart MySQL:

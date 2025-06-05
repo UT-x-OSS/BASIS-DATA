@@ -85,12 +85,19 @@ sudo systemctl start mysql
 ```
 
 ### 🔧 MASTER SETUP 🖥️
+```bash
+/etc/mysql/my.cnf
+```
 
 ```bash
-echo "[mysqld]
+[mysqld]
 server-id=1
 log-bin=mysql-bin
-binlog_format=MIXED" | sudo tee -a /etc/mysql/my.cnf
+binlog_format=MIXED
+bind-address=0.0.0.0
+
+# Opsional, kalau cuma mau replikasi database tertentu, contoh:
+# binlog_do_db=nama_database
 ```
 
 Restart MySQL:
@@ -108,9 +115,8 @@ mysql -u root -p
 Inside MySQL prompt:
 
 ```sql
-CREATE USER 'replica'@'%' IDENTIFIED BY 'password';
-GRANT REPLICATION SLAVE ON *.* TO 'replica'@'%';
-FLUSH PRIVILEGES;
+GRANT ALL PRIVILEGES, REPLICATION SLAVE ON *.* TO 'user'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
+
 ```
 ```sql
 SHOW MASTER STATUS;
@@ -165,7 +171,7 @@ mysql -u root -p
 ```
 
 ```sql
-CHANGE MASTER TO MASTER_HOST='192.168.??.??', MASTER_USER='replica', MASTER_PASSWORD='password', MASTER_LOG_FILE='mysql-bin.00000?', MASTER_LOG_POS=123;
+CHANGE MASTER TO MASTER_HOST='192.168.??.??', MASTER_USER='user', MASTER_PASSWORD='password', MASTER_LOG_FILE='mysql-bin.00000?', MASTER_LOG_POS=123;
 ```
 
 ```sql

@@ -90,8 +90,7 @@ sudo systemctl start mysql
 echo "[mysqld]
 server-id=1
 log-bin=mysql-bin
-binlog_format=MIXED
-read_only=0" | sudo tee -a /etc/mysql/my.cnf
+binlog_format=MIXED" | sudo tee -a /etc/mysql/my.cnf
 ```
 
 Restart MySQL:
@@ -137,7 +136,8 @@ SHOW MASTER STATUS;
 ```bash
 echo "[mysqld]
 server-id=2
-relay-log=mysql-relay-bin" | sudo tee -a /etc/mysql/my.cnf
+relay-log=mysql-relay-bin
+read_only=0" | sudo tee -a /etc/mysql/my.cnf
 ```
 
 Restart MySQL:
@@ -153,7 +153,7 @@ mysql -u root -p
 ```
 
 ```sql
-CHANGE MASTER TO MASTER_HOST='192.168.??.??', MASTER_USER='replica', MASTER_PASSWORD='password', MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=123;
+CHANGE MASTER TO MASTER_HOST='192.168.??.??', MASTER_USER='replica', MASTER_PASSWORD='password', MASTER_LOG_FILE='mysql-bin.00000?', MASTER_LOG_POS=123;
 ```
 
 ```sql

@@ -68,5 +68,5 @@ Sudah disediakan data pasien, dokter, perawat, dan obat sebagai contoh untuk per
 ---
 
 Terus semangat belajar dan coding!  
-> 🛠️ Crafted by Kiran & Shakira &  frines from Universitas Terbuka.
+> 🛠️ Crafted by Kiran & Shakira &  friends from Universitas Terbuka "sistem informasi".
 

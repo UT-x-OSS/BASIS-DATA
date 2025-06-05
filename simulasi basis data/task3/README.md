@@ -90,7 +90,8 @@ sudo systemctl start mysql
 echo "[mysqld]
 server-id=1
 log-bin=mysql-bin
-binlog_format=MIXED" | sudo tee -a /etc/mysql/my.cnf
+binlog_format=MIXED
+read_only=0" | sudo tee -a /etc/mysql/my.cnf
 ```
 
 Restart MySQL:
@@ -111,7 +112,17 @@ Inside MySQL prompt:
 CREATE USER 'replica'@'%' IDENTIFIED BY 'password';
 GRANT REPLICATION SLAVE ON *.* TO 'replica'@'%';
 FLUSH PRIVILEGES;
+```
+```sql
+SHOW MASTER STATUS;
+```
 
+```sql
++------------------+----------+--------------+------------------+-------------------+
+| File             | Position | Binlog_Do_DB | Binlog_Ignore_DB | Executed_Gtid_Set |
++------------------+----------+--------------+------------------+-------------------+
+| mysql-bin.000001 |     123  |              |                  |                   |
++------------------+----------+--------------+------------------+-------------------+
 ```
 
 
@@ -139,18 +150,6 @@ Login to MySQL && Inside MySQL prompt :
 
 ```bash
 mysql -u root -p
-```
-
-```sql
-SHOW MASTER STATUS;
-```
-
-```sql
-+------------------+----------+--------------+------------------+-------------------+
-| File             | Position | Binlog_Do_DB | Binlog_Ignore_DB | Executed_Gtid_Set |
-+------------------+----------+--------------+------------------+-------------------+
-| mysql-bin.000001 |     123  |              |                  |                   |
-+------------------+----------+--------------+------------------+-------------------+
 ```
 
 ```sql

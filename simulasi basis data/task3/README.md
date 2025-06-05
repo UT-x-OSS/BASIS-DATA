@@ -55,7 +55,7 @@ sudo apt install mariadb-server
 setup bebrerapa OS
 
 ```bash
-sudo nano /etc/my.cnf.d/mariadb-server.cnf   # Arch
+sudo nano /etc/my.cnf.d/server.cnf  # Arch
 
 # atau
 
@@ -65,15 +65,18 @@ sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf  # Ubuntu/Debian
 setup mariadb atau mysql
 
 ```bash
-sudo mkdir /var/lib/mysql-maria
-sudo chown mysql:mysql /var/lib/mysql-maria
-sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql-maria
+# Buat ulang folder data default (jika perlu)
+sudo mkdir -p /var/lib/mysql
 
-# atau mysql
-
-sudo mkdir /var/lib/mysql
+# Beri hak milik ke user mysql
 sudo chown mysql:mysql /var/lib/mysql
+
+# (Opsional tapi direkomendasikan) Set permission
+sudo chmod 750 /var/lib/mysql
+
+# Inisialisasi MariaDB dengan folder default
 sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+
 ```
 
 ```bash

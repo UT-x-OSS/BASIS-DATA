@@ -1,30 +1,39 @@
 
 
-# 🔥💀 MySQL Replication & Transaction Warfare — No GUI, Just CLI Grit
 
-- 💻 Just copy & paste this to your machine — no config, no drama
+# 📊 Replikasi Basis Data
 
-> **Real ones don't use GUIs.**  
-This is your full-throttle guide to setting up MySQL replication *exclusively* from the terminal — no phpMyAdmin, no mouse clicks, just raw shell power.  
-Perfect for devs, sysadmins, and digital warriors who live in the terminal.
+📚 Repositori ini dibuat untuk memudahkan kalian dalam mengerjakan tugas basis data, khususnya terkait setup dan konfigurasi replikasi MySQL.  
+Di sini kami menyediakan panduan lengkap, mulai dari instalasi, konfigurasi master dan slave, hingga troubleshooting yang sering ditemui.
 
-> ⚠️ Note: Tested and tuned on **Linux-to-Linux** setups. Cross-OS setups (like Linux to Windows) might behave differently — tread carefully.
+
+## Cara Menggunakan Repositori Ini
+
+1. Ikuti panduan konfigurasi master dan slave secara berurutan.  
+2. Gunakan perintah dan skrip yang sudah disediakan.  
+3. Cek status replikasi secara berkala untuk memastikan sinkronisasi data.  
+4. Jika menemui masalah, baca bagian troubleshooting di bawah.  
+5. Jangan ragu untuk bertanya atau berdiskusi di komunitas kami di > https://discord.gg/zSkRxtuG  
 
 ---
 
-## ❓ Apa Itu Master dan Slave?
+> Terima kasih sudah menggunakan repositori ini! Semoga membantu dan mempermudah tugas basis data kalian.
 
-Dalam konteks **MySQL Replication**, *Master* dan *Slave* adalah peran yang diberikan ke server:
+> kalau lo pengen kontribusi, tambahin fitur, atau perbaiki isi repositori ini, langsung aja pull request. Kita welcome banget sama kontribusi dari lo!
 
-- **Master**: Server utama yang menyimpan data asli dan mencatat semua perubahan data (insert, update, delete) ke dalam file log biner (binary log).
-- **Slave**: Server cadangan yang membaca log biner dari master dan mereplikasi perubahan tersebut secara real-time.
+---
 
-### Kenapa Harus Pakai Master–Slave?
+## ❓ Master & Slave MySQL Replication
 
-- 🛡️ **Backup real-time** — slave jadi backup otomatis.
-- 📊 **Load balancing** — baca data dari slave untuk kurangi beban master.
-- ⚙️ **Failover** — kalau master down, slave bisa dinaikkan jadi master baru.
-- 🧪 **Testing** — slave bisa dipakai untuk testing data tanpa sentuh data asli.
+- Master: Server utama simpan data & catat perubahan di binary log.
+- Slave: Server cadangan baca log master & sinkron real-time.
+
+### Manfaat:
+
+- 🛡️ Backup real-time otomatis.
+- 📊 Beban baca dialihkan ke slave.
+- ⚙️ Failover saat master down.
+- 🧪 Testing tanpa ganggu data asli.
 
 ---
 
@@ -86,7 +95,7 @@ sudo systemctl start mysql
 
 ### 🔧 MASTER SETUP 🖥️
 ```bash
-/etc/mysql/my.cnf
+sudo /etc/mysql/my.cnf
 ```
 
 ```bash

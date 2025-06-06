@@ -67,6 +67,7 @@ Sudah disediakan data pasien, dokter, perawat, dan obat sebagai contoh untuk per
 > teman-teman mahasiswa dari Universitas Terbuka, saya ucapkan terima kasih banyak atas bantuan, dukungan, dan kerja sama kalian selama pengerjaan repository ini. Tanpa kalian, database ini nggak akan selesai dengan baik. Semoga hasil kerja kita bersama ini bisa bermanfaat buat belajar dan pengembangan selanjutnya. 
 ---
 
-Terus semangat belajar dan coding!  
-> 🛠️ Crafted by Kiran & Shakira &  friends from Universitas Terbuka "sistem informasi".
+### AUTHOR
+
+🔥 UT STUDENT - Information System 🔥
 

@@ -3,6 +3,6 @@ Yo fam, this here’s the ultimate repo for your database course grind — built
 
 This project’s made to help you get a real feel of how databases work, easy to follow, and ready for you to flex and build on however you want. So don’t be shy — dive in, tinker, and level up your skills till you’re bossin’ it.
 
-> Big shoutout to all the UT friends from Information System — respect and thanks for holding it down!
+### AUTHOR
 
-> Stay sharp, keep hustlin’, grind hard like a true don, and let’s stack that knowledge and get this bread proper — no shortcuts, all boss moves! Respect to the real ones makin’ moves every day.
+🔥 UT STUDENT - Information System 🔥

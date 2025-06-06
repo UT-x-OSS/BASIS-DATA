@@ -146,9 +146,9 @@ INSERT INTO Pasien (nama, tanggal_lahir, jenis_kelamin, alamat, telepon) VALUES
 ('Fitri Handayani', '1988-08-30', 'P', 'Jl. Dahlia No. 8', '081278901234');
 
 INSERT INTO Dokter (nama, spesialisasi, telepon) VALUES
-('Dr. Agus Santoso', 'Cardiology', '081212345678'),
+('Dr. UDIN', 'Cardiology', '081212345678'),
 ('Dr. Lina Kusuma', 'Pediatrics', '081223456789'),
-('Dr. Joko Widodo', 'Orthopedics', '081234567891'),
+('Dr. EJA odo', 'Orthopedics', '081234567891'),
 ('Dr. Maya Sari', 'Neurology', '081245678912'),
 ('Dr. Bima Prasetya', 'General Surgery', '081256789123'),
 ('Dr. Sari Dewi', 'Dermatology', '081267891234');

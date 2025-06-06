@@ -325,8 +325,6 @@ Berikut beberapa alasan penting kenapa penggunaan CLI dalam pembelajaran MySQL s
 ---
 
 > 🛠️ Crafted by **Kiran** & **Shakira**, students of **Universitas Terbuka**.  
-> 💡 Built with focus, driven by curiosity.  
-> ⚡ Lightweight, reliable, and made to help you work smarter.  
-> © 2025. All rights reserved.
+
 
 
